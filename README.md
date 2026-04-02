@@ -22,7 +22,7 @@ Chat with your table's LA about their taste in games. How are their tastes simil
 
 
 ### Activity 2
-
+<img width="960" height="720" alt="GDIM 33 Rhythm Game Break-down (1)" src="https://github.com/user-attachments/assets/a0cc965b-7396-4d07-8e28-3984b90fc5de" />
 
 ## W2
 Write your W2 Devlog here.
