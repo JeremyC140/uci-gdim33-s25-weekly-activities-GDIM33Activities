@@ -22,7 +22,6 @@ Chat with your table's LA about their taste in games. How are their tastes simil
 
 
 ### Activity 2
-Put your activity 2 image here. REMOVE THIS INSTRUCTIONAL TEXT.
 
 
 ## W2
