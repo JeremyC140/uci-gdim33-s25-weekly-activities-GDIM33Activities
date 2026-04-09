@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: PenguinEnlarge
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Penguin
+      Enlarge Script","summary":"Enlarge the penguin according to custom vector 3
+      scale every frame.","pan":{"x":-34.6243,"y":159.2496},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-172.0,"y":-136.0},"guid":"34fdc1c2-18a1-48d9-8416-f0c97caf130a","$version":"A","$type":"Unity.VisualScripting.Update","$id":"9"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"scaleVector","$type":"System.String"},"object":null},"position":{"x":-266.0,"y":172.0},"guid":"10b7e2f5-897f-413a-8a87-0b5d1d44da7c","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"11"},{"chainable":false,"member":{"name":"localScale","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"input":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":66.0,"y":-133.0},"guid":"93ab1c44-f592-4dea-8639-4e656828ab0d","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"13"},{"member":{"name":"localScale","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-263.0,"y":59.0},"guid":"eea5c266-1439-44e2-bc0a-a3944eff46fe","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"16"},{"defaultValues":{"b":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-29.0,"y":100.0},"guid":"98c8f2a9-7cab-4fd7-a0bd-686497580c4c","$version":"A","$type":"Unity.VisualScripting.Vector3Multiply","$id":"19"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"7d1a853e-2689-43f4-a6ca-59b5430a2d1f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"a","guid":"386907a1-1e8f-4636-b66e-b26c1c8d1dfe","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"b","guid":"d2d9e0a5-a203-4fa0-9918-b014fe0f2bf5","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"791c2199-c796-44f5-9fd6-fab74399a87d","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
