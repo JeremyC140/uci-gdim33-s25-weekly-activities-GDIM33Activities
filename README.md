@@ -18,5 +18,15 @@
 <img width="960" height="720" alt="GDIM 33 Rhythm Game Break-down (1)" src="https://github.com/user-attachments/assets/a0cc965b-7396-4d07-8e28-3984b90fc5de" />
 
 ## W3
+### Activity 1
 <img width="1072" height="694" alt="image" src="https://github.com/user-attachments/assets/40ae40cd-4cfc-4e0c-85b4-4e0cf98a4190" />
 
+
+### Activity 2
+1. It's more advantageous to save the event name as a scene variable because it provides easy access to the event variable across different visual scripting graphs, rather than coder trying hard to memorize every event name they created. 
+
+2. Using debug.log helps me to check that a specific node has been runned without struggling to observe both the scene play and the visual scripting graph at the same time (which could be hard on my screen). The linear progression of visual scripting graph also makes it certain that its previous node has been visited which is definitely helpful for efficient debugging. 
+
+3. Set cursor lock state would be somehow relevant to my vertical slice because my current rhythm game operates based on player's keyboard input, without using the mouse. However, since my rhythm game is a 2D lock-screen game, player moving the cursor wouldn't actually affect the gameplay. Thus, it's a feature that's optional for me to implement. 
+
+4. Certainly! The concept of game state would help me manage the switch of scene before game, during gameplay, and after gameplay (the result scene). It would also be another good usage of scripting state machine in my game. 
