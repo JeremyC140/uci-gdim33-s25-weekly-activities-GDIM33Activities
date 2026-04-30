@@ -46,3 +46,15 @@ Since there aren't really gameplay in my game, so I introduced to them about the
 1. Yes because the dialogue completely depends on the creation of scriptable object and their interconnection, which could be done in the editor. 
 2. There's basically not a limit to the maximum number of nodes as long as it doesn't exceed what unity could afford. If there are too many branching options, it would still only be UI issue about the positioning of buttons, button size, or container adjustment. 
 3. Regenerate nodes act as an initialization to all available visual scripting node options, including the default ones, and nodes for monobehaviour and scriptable object scripts branching options. It could also be used to initialize new nodes after adding them to the project setting. 
+
+
+## W5
+### Activity 1
+I have already settled down the ScriptableObject for SongData that store the metadata and chart for a specific song. For the classtime, I will be implementing player interaction feedbacks for my game, specifically:
+1. Star Lane Reaction for Keyboard Press:
+- In the LaneController script, when the designated keycode for this lane is pressed, make the lane star scales down a little bit to indicate that it's being pressed
+- make the lane restores its original scale when the keycode is detected up (GetKeyUp).
+- Add a colored star outline behind the lanes that will be visible when the lane star is scaled down. 
+
+### Activity 2
+This visual feedback has took longer than I expected because I was trapped by the procedural logic in the update method. My lane visual method has to be called at the very top of the update so it could be executed before any other keycode detection logic that also stays in the update method of LaneController script. As a result, I got the lane star to pulse by using math.lerp to create its visual pulsing effect (smooth scaling up and down) when its designated key is pressed. However, I didn't have time to implement the colored lane background, but that would be easier than this coding logic. 
