@@ -58,3 +58,23 @@ I have already settled down the ScriptableObject for SongData that store the met
 
 ### Activity 2
 This visual feedback has took longer than I expected because I was trapped by the procedural logic in the update method. My lane visual method has to be called at the very top of the update so it could be executed before any other keycode detection logic that also stays in the update method of LaneController script. As a result, I got the lane star to pulse by using math.lerp to create its visual pulsing effect (smooth scaling up and down) when its designated key is pressed. However, I didn't have time to implement the colored lane background, but that would be easier than this coding logic. 
+
+
+## W6
+### Activity 1
+Since the last build, I have implemented a simple chart for my song (20 music notes generated in a fixed eight-beats interval). The keyboard press is now visually observable, meaning that pressing a certain key will trigger the visual effect of that certain lane it's controlling. I have also implemented a minimal song selection menu. For my playtesting goals, I am simply looking for any general feedback on the user experience when playing the game. I am expecting some feedback on the note-hitting mechanics because it still needs some refinement and it might be offbeated for now because the offset is not customizable on built yet. Just want to get a general sense of how player would feel about this gameplay. 
+
+Playtest Team: Ke-Chieh Chang (me), Jingyi Cheng, Jeremiah Yang, Brandon Tsay, TA Elijah
+
+[Current Built link](https://cap0103.itch.io/33-rhythm-game-milestone-2)
+
+I received several great constructive feedback from the playtesting! Some peers think the finger position is intuitive after actually playing and adapting to it. The most central thing I could work on next is the visual approach effect of the note. I did try to use some exponential growth equation when calculating the approach speed of the note, but it could feel a little confusing in term of when the note will actually "grow completely". Some peers suggest the note could be spawned starting at a 20% scale rather than a 0% scale so the approach could be more visible and natural. 
+
+### Activity 2
+1. Because the Blending node is directly multiplying the RGB value of both colors. When two floats smaller than 1 are multiplied, the final value becomes even smaller than the two floats which gives a darker color (closer to rgb black (0, 0, 0)). It's less saturated because the alpha has also diminished due to the same effect. 
+
+2. More translucent, or more transparent because two floats smaller than one multiply to a smaller decimal number, which represents a more translucent alpha value. 
+
+3. The UV value comes from the data stored in the vertex of the 3D mesh. 
+
+4. Yes, because I might be able to create an iterative series of rgb combination using trigonemetry formula to oscillate each rgb value, generating some chaotic color visual effects. 
