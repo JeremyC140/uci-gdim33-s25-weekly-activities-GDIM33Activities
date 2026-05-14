@@ -78,3 +78,20 @@ I received several great constructive feedback from the playtesting! Some peers 
 3. The UV value comes from the data stored in the vertex of the 3D mesh. 
 
 4. Yes, because I might be able to create an iterative series of rgb combination using trigonemetry formula to oscillate each rgb value, generating some chaotic color visual effects. 
+
+
+## W7
+### Activity Devlog
+1. The color comes from the normal vectors of the shiba's mesh model, where each normal vector's x, y, z mapped the r, g, b value of that specific point. 
+
+2. This happens when the vertices of a triangle are consisted of different colors, which create the interpolated (blended) color fragments at the middle of this triangle. 
+
+3. Because the material mainly defines how the mesh will be rendering through shader calculation without the providing specifically how its colored is mapped onto the mesh like texture does. However, material will be useful when rendering the low-poly objects in game that demands less of the details, which could be beneficial for game optimization. 
+
+4. It looks perfect, great job modeling!
+
+5. It could be used to debug the overall smoothness of the mesh model and check if there's any undesired pumps that might lead to weird rendering effect. 
+
+6. It's because we're using directional light which is embodied by vectors that directly pointed toward the shiba mesh, which causes the dot product calculation to be opposite from what the intended effect is supposed to do. To solve this, we inverted the direction of the directional light before using it for fragment color calculation. 
+
+7. By adding (suming) the value from color source to its destination value, we are making the brighter parts brighter and the darker part more darkened (rgb closer to 1), which is more desired in term of creating the fire effect. 
