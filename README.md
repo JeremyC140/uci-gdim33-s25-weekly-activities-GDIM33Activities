@@ -95,3 +95,18 @@ I received several great constructive feedback from the playtesting! Some peers 
 6. It's because we're using directional light which is embodied by vectors that directly pointed toward the shiba mesh, which causes the dot product calculation to be opposite from what the intended effect is supposed to do. To solve this, we inverted the direction of the directional light before using it for fragment color calculation. 
 
 7. By adding (suming) the value from color source to its destination value, we are making the brighter parts brighter and the darker part more darkened (rgb closer to 1), which is more desired in term of creating the fire effect. 
+
+
+## W8
+### Activity 1:
+Since last milestone, I have adjusted how the star approaches by making it spins and having a smoother approaching velocity. I would like feedbacks centering around how the mechanics is more / less visual appealing or intuitive for the player. After playtested by two peers, the majority of the feedbacks centered around how the offset feels a little off which causes confusion at the timing of press. I received positive feedback about adding the spinning approach and labeling the stars with their keyboards. To improve the game, I will be constructing and adding the setting page for the game soon, which could be accessed before game and during game when the pause if pressed. In the setting page, I hope the offset to be adjustable, and also the approach speed. If possible, I would also like to make the keyboard position changable according to player's liking. 
+
+
+### Activity 2:
+1. The fraction node grab the decimal part of the input number. In this activity, it cooperate with the Time node and always read the amount of real time passed from it. As the time keep increases, the fraction node loops between 0.0-0.9 and goes on forever, creating the shiny (normal -> bright -> normal...) effect. 
+
+2. Because the poof effect is supposed to brighten the dark environment. By adding the originally black default color to the poof shiny effect, it could then successfully function the brighten effect. 
+
+3. Because the building texture isn't taken into consideration when actually rendering the sprite. It overrides the texture with the actual object's spriterenderer.
+
+4. This is actually a math question. If we are multiplying the ShineSpeed to the fraction node, which output a value between 0.0-0.9, we are essentially limiting the range of the shiny effect, or exaggerating it. For example, multiplying a shine speed of 0.1 to the fraction node limits its output to be 0.0-0.09, which means that the change will be less obvious (instead of enhancing the shining speed). On the other hand, multiplying a shine speed of 2 to the fraction node expands its output range to be 0-2.0, which widen the range and makes the color changes more drastically, which still does not fulfill the purpose of changing shine speed. 
