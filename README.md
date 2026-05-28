@@ -110,3 +110,19 @@ Since last milestone, I have adjusted how the star approaches by making it spins
 3. Because the building texture isn't taken into consideration when actually rendering the sprite. It overrides the texture with the actual object's spriterenderer.
 
 4. This is actually a math question. If we are multiplying the ShineSpeed to the fraction node, which output a value between 0.0-0.9, we are essentially limiting the range of the shiny effect, or exaggerating it. For example, multiplying a shine speed of 0.1 to the fraction node limits its output to be 0.0-0.09, which means that the change will be less obvious (instead of enhancing the shining speed). On the other hand, multiplying a shine speed of 2 to the fraction node expands its output range to be 0-2.0, which widen the range and makes the color changes more drastically, which still does not fulfill the purpose of changing shine speed. 
+
+
+## W9
+### Activity 1:
+1. Minecraft
+
+2.1. We are thinking about the purple-swirling effect that is triggered when the player is entering the Nether Portal. We anticipated this effect to be done through a full-screen post-processing effect that overlays on the screen as player is collising with the portal section (which could be a trigger collider), and the effect is disabled when player gets away with the portal section.
+
+2.2. We also thinked about the bubbling effect around the object that used a potion. We anticipated this effect to be triggered when an item is collided in the range of the potion spray, which makes the bubbling effect starts popping up around that item in a certain interval of time and with a certain color depending on the type of potion. This is more like the particle rendering effect that's centered around the item that is being interacted. 
+
+### Activity 2:
+
+![alt text](image.png)
+
+- I am still trying to implement the shader graph effect that makes the golden star's tips shiny, however, that has not worked out successfully yet. In today's class I did implement the full-screen post-processing effect that produce cinematic screen effect when a player hits perfectly on a note. 
+
