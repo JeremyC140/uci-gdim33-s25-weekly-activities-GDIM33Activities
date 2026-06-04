@@ -120,9 +120,34 @@ Since last milestone, I have adjusted how the star approaches by making it spins
 
 2.2. We also thinked about the bubbling effect around the object that used a potion. We anticipated this effect to be triggered when an item is collided in the range of the potion spray, which makes the bubbling effect starts popping up around that item in a certain interval of time and with a certain color depending on the type of potion. This is more like the particle rendering effect that's centered around the item that is being interacted. 
 
+
 ### Activity 2:
 
 ![alt text](image.png)
 
 - I am still trying to implement the shader graph effect that makes the golden star's tips shiny, however, that has not worked out successfully yet. In today's class I did implement the full-screen post-processing effect that produce cinematic screen effect when a player hits perfectly on a note. 
 
+
+## W10
+### Activity 1:
+There's not too much new since Milestone 2 but since I am starting to refine the game chart to complete the gameloop, I am still looking forward for any comments on the gameplay mechanics, how it feels, and its difficulty. After playtested, I received feedback that the flow of the game feels pretty good and natural, also since I added the adjustable offset in Milestone 2. Playtester appreciate the shader graph and post-processing effect and feel that the dull grey background of the game now don't match with these cool effect XD (but this is for polishing so I might not worked on it for the vertical slice :p). Finally, the playtester still thinks it would be good if the speed that the stars are approaching could be customized, which would be possible and I will be working on it. 
+
+[Build used today](https://cap0103.itch.io/33-rhythm-game-milestone-4)
+
+
+### Activity 2:
+- Step 1: Brainstorming!
+I think it's always essential to gather enough thoughts, ideas, and catches before starting a project. I found the moodboard we created at the very start of this class to be helpful in igniting my imagination and innovation. Jugging down all the cool ideas in mind and then find connections between them is definitely helpful for me when doing a creative project. 
+
+- Step 2: Breaking Down the Core Mechanics
+To start building the game, drawing the breakdown chart specifically for the core mechanics help a lot in concentrating my thought and direction. From the experience of creating minigames in 31, 32, and to this quarter-long project in 33, I am more persuaded to actually go beyond "planning in head" and actually draw out the breakdown chart. By reviewing the breakdown chart during the development process, it keeps my head clear about what to work on next, and which systems are more priortized in producing. 
+
+- Step 3: Spliting Big Step into Small Steps
+For me, this step doesn't necessary have to be a "plan ahead", but could happen only after I start working on that big step. However, it's still helpful for me to map out the small, achievable steps as to-do list during the process of production. By taking time to think through the next process in head and writing it out, it not only help making the goal visible and achivable, it also helps my problem of procrastination because the reason for procrastination is usually that the goal looks to far-away and exhausted to be done. This to-do list style practice helps me to concentrate better on working and gives me sense of accomplishment as works went on. 
+
+- Step 4: Refine the Breakdown Chart
+I found it nice to iteratively refine the breakdown chart during development. The breakdown chart is more than the pre-planning, but it is the architecture of the whole system and game that I'm visualing and working toward. For example, when developing my rhythm game, I actually have numerous instance of making the breakdown chart more concise, such as the time where I integrate all of the effects and performance of notes into a single system rather than overly spliting them; and there's also time where I have to breakdown a system furthermore because I didn't realize its complicatedness once I started working on it. As a result, refining this north-star chart has been helpful for me in navigating my project and progress. 
+
+
+### Activity 3:
+I finalized the gameloop by adding the result screen that shows how many perfect, good, and miss the player got and the calculated accuracy. The player is now able to play the entire "Infinity Heaven" song (1 min 30 sec ish), acquire the overall judgment result, and return to the menu screen. 
